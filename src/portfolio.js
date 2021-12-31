@@ -11,7 +11,7 @@ const about = {
   name: 'Mehul Mukherjee',
   role: 'Software Engineer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    '',
   resume: pdf,
   social: {
     linkedin: 'https://linkedin.com/in/mehulmukherjee',
@@ -23,46 +23,45 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Thread Migrator',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      `Migrated a pthread from machine A to another machine B. The task that a pthread was performing in
+      machine A, is resumed in machine B when a pthread is migrated from A to B.`,
+    stack: ['C'],
+    sourceCode: 'https://github.com/mehulmukherjee/thread-migrator',
+    livePreview: ''
   },
   {
-    name: 'Project 2',
+    name: 'Distributed Mutex Lock',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Machines with different IP addresses, compete for a lock for a common critical section by following Ricart-Agarwala distributed mutex lock algorithm. Machines communicate with each other using gRPC.',
+    stack: ['C++'],
+    sourceCode: 'https://github.com/mehulmukherjee/distributed-mutex-lock',
+    livePreview: '',
   },
   {
-    name: 'Project 3',
+    name: 'Information Retrieval System',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      ' Implemented a record-level inverted index with a user interface for searching a word or a sentence in a set of documents. When searching a word or a phrase, the software returns the document links which contains the search key.',
+    stack: ['Python', 'Flask', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/mehulmukherjee/information-retrieval-system',
+    livePreview: '',
   },
 ]
 
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'HTML',
+  'Java',
   'JavaScript',
   'TypeScript',
-  'React',
-  'Java',
   'Angular',
+  'React',
   'SQL',
   'MySQL',
   'Git',
   'Jira',
-  'Spring Framework',
-  'Hibernate',
+  'REST API',
 ]
 
 const contact = {

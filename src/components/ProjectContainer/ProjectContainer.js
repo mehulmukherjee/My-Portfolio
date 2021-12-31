@@ -5,9 +5,14 @@ import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
-    <h3>{project.name}</h3>
 
+    <div>
+    <h3>{project.name}</h3>
+    </div>
+    <div>
     <p className='project__description'>{project.description}</p>
+    </div>
+    <div>
     {project.stack && (
       <ul className='project__stack'>
         {project.stack.map((item) => (
@@ -17,7 +22,7 @@ const ProjectContainer = ({ project }) => (
         ))}
       </ul>
     )}
-
+    
     {project.sourceCode && (
       <a
         href={project.sourceCode}
@@ -37,6 +42,7 @@ const ProjectContainer = ({ project }) => (
         <LaunchIcon />
       </a>
     )}
+    </div>
   </div>
 )
 
